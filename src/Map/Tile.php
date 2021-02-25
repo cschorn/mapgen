@@ -3,7 +3,13 @@
 
 namespace MapGenerator\Map;
 
-
+/**
+ * An individual map tile
+ *
+ * TODO:
+ * - more states/types -- maybe refactor to an interface?
+ * - state/items on the tile
+ */
 class Tile
 {
     private bool $isWalkable = false;

@@ -3,6 +3,13 @@
 
 namespace MapGenerator\Map;
 
+/**
+ * Generate ASCII output for a given map
+ *
+ * TODO:
+ * - factor out tile conversion as states grow
+ * - be ready to factor out interface/base class for other backends
+ */
 class MapPrinter
 {
     private Map $map;

@@ -6,6 +6,13 @@ namespace MapGenerator\Map;
 
 use Generator;
 
+/**
+ * Manage a game map and provide access to the individual tiles
+ *
+ * TODO:
+ * - add iterators for neighbors/connected tiles
+ * - add support for arbitrary connections (teleporters, connections to different maps etc.)
+ */
 class Map
 {
     private int $width;
