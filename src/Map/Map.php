@@ -4,6 +4,8 @@
 namespace MapGenerator\Map;
 
 
+use Generator;
+
 class Map
 {
     private int $width;
@@ -22,5 +24,15 @@ class Map
     public function getTileAt(int $x, int $y): Tile
     {
         return $this->tiles[$y * $this->width + $x];
+    }
+
+    public function lines(): Generator
+    {
+        $line = 0;
+
+        while ($line < $this->height) {
+            yield array_slice($this->tiles, $this->width * $line, $this->width);
+            $line += 1;
+        }
     }
 }
