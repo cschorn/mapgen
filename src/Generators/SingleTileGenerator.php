@@ -32,7 +32,7 @@ class SingleTileGenerator
     {
         $tiles = [];
         for ($i = 0; $i < $this->width * $this->height; ++$i) {
-            $tiles[] = new Tile(...$this->constructorArgs);
+            $tiles[] = new $this->baseClass(...$this->constructorArgs);
         }
 
         return new Map($this->width, $this->height, $tiles);
