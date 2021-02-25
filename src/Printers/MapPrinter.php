@@ -1,7 +1,10 @@
 <?php
 
 
-namespace MapGenerator\Map;
+namespace MapGenerator\Printers;
+
+use MapGenerator\Map\Map;
+use MapGenerator\Map\Tile;
 
 /**
  * Generate ASCII output for a given map

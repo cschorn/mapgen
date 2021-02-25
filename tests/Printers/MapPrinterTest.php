@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Map;
+namespace Printers;
 
 
 use MapGenerator\Map\Map;
-use MapGenerator\Map\MapPrinter;
 use MapGenerator\Map\Tile;
+use MapGenerator\Printers\MapPrinter;
 use PHPUnit\Framework\TestCase;
 
 class MapPrinterTest extends TestCase
